@@ -13,32 +13,40 @@
         <!--Navigation Section-->
         <nav id="main-nav">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Favorites</li>
+                <li> <a href="https://www.testudo.umd.edu/" target="_blank"> Testudo</a></li>
+                <li> <a href="https://www.pinterest.com/" target="_blank"> Pinterest</a></li>
+                <li> <a href="https://elms.umd.edu/" target="_blank"> Elms</a></li>
             </ul>
         </nav>
 
 
         <!--Main Text Area-->
         <div class="main-container">
-            <h1>Annoucments</h1>
             <div class="content-area">
                 <div class="content-box">
-                    <h1>box 1</h1>
+                    <h1>Play the Random Game!</h1>
+                    <p>Enter your name and choose a color:</p>
                     <form>
                         <label for="name">Name: </label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <label for="choice">Choose a color:</label>
+                        <select id="choice" name="choice">
+                            <option hidden disabled selected>-- Select Option --</option>
+                            <option value="purple">Purple</option>
+                            <option value="blue">Blue</option>
+                            <option value="pink">Pink</option>
+                        </select>
+                        <br>
                         <input type="submit">
                     </form>
                 </div>
             </div>
 
-            <aside id="contact">
-                <h1>Contact Info</h1>
+            <aside id="rules">
+                <h1>Rules</h1>
                 <hr>
-                <h3>Name: Arlyna Catimbang</h3>
-                <h3>Email: acatimba@terpmail.umd.edu</h3>
+                <h3>All you have to is add you name and choose a color!</h3>
             </aside>
         </div>
 
